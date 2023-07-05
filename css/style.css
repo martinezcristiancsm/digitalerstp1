@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Belanosima', sans-serif;
+}
+
+/*--------------- nav bar ----------*/
+
+.header{
+
+    width: 100%;
+    /*background: rgb(210, 231, 212);
+    background: linear-gradient(0deg, rgb(230, 248, 231)55) 0%, rgba(255,255,255,1) 100%;*/   
+    background:url(../img/background.png) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+nav img {
+    width: 180px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color:#7c8e5f;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:#7c8e5f;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/*--------------- ecommerce button----------*/
+
+.ecommerce {
+    display: inline-block;
+    text-align: center;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.tiendabutton {
+    display: flex;
+    text-decoration: none;
+    color: #7c8e5f;
+    border: 1px solid #7c8e5f;
+    font-size: 12px;
+    padding: 12px 7px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px; 
+}
+.tiendabutton:hover{
+    border: 1px solid black;
+    background: #f8f3a8;
+    transition: 1s;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+
+/*--------------- landing ----------*/
+
+
+.flex {
+    display: flex; 
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.text-box {
+    position: relative;
+}
+
+.text-box h1 {
+    font-size: 60px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #3b3838;
+    position: relative;
+}
+
+.containerplanta {
+    display: flex; 
+    
+}
+
+.containerplanta img {
+    width: 400px;
+    
+}
+
+
+/*--------------- post landing ----------*/
+
+.landing {
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+    background-image: url(../img/object.png);
+    background-size: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+h1  {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: right;
+    color: #3f4730;
+    border-color: white;
+    border: 5px;
+}
+
+.landing p {
+    color: #62665a;
+    font-weight:300;
+    line-height: 22px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+
+}
+
+.container {
+    margin-top:5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.serv {
+    background: #faf8db;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.serv a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+h3 {
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.serv:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0,0.2);
+}
+
+
+/*--------------- servicios y trabajos ----------*/
+
+.section2 {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background: rgb(220,232,189);
+    background: linear-gradient(0deg, rgba(220,232,189,1) 0%, rgb(255, 244, 251) 100%);  
+}
+
+.section2 h1{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.section2 p{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 4% ;
+    padding-bottom: 4%;
+    color:#3f4730 ;
+    font-size: 20px;
+}
+
+.section2 a{
+    font-size: 12px;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: #3f4730;
+}
+
+.section2 a:hover{
+    transition: 1s;
+    color:#3b3838;
+}
+
+
+
+.clientes {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+
+
+  .container-clientes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.trabajosclientes {
+  width: 300px;
+  padding: 30px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #faf8db;
+  margin: 5px;
+  
+}
+
+.trabajosclientes img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.trabajosclientes:hover{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0,0.2);
+}
+
+/*--------------- final landing ----------*/
+
+.final {
+    display:grid;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.final h1 {
+    font-size: 45px;
+    text-align: left;
+}
+
+.final p {
+    padding-top: 50px;
+    font-size: 20px;
+    color: #3b3838;
+}
+
+.final2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.final2 img {
+    width: 80%;
+    height:auto;
+    padding-bottom: 50px;
+    border-radius: 15px;
+}
+
+.final2 a {
+    border: 0;
+}
+
+/*--------------- footer ----------*/
+
+.footer {
+    padding: 50px;
+    background-color: #faf8db;
+    align-items: center;
+    text-align: center;
+}
+
+
+.footer p {
+    padding-top: 10px;
+    color: #3f4730;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+/*--------------- GALLERY SECTION ----------*/
+
+.h1galeria {
+    background-color:#faf8db;
+}
+
+.h1galeria h1{
+    text-align: center;
+    padding: 25px;
+
+}
+
+
+
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: url(../img/object.png);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .galeria-item {
+    width: 280px;
+    padding: 20px;
+    border-radius: 5px;
+    border-style: none;
+    background-color:#faf8db;
+    margin: 5px;
+  }
+
+  .galeria-item img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+
+
+
+
+
+
+
+
+
+

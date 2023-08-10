@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta description="">
     <title>Disfruta Verde🌱</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,12 +20,11 @@
         <nav>
             <a href="../index.html"><img src="../img/logo.png" alt="logo" /></a>
             <div class="nav-links" id="navlinks">
-
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
                 <ul>
                     <li><a href="../index.html">INICIO</a></li>
                     <li><a href="galeria.html">GALERIA</a></li>
                     <li><a href="contacto.html">CONTACTO</a></li>
-                    <li><a href="nosotros.html">NOSOTROS</a></li>
                     <li><a href="faqs.html">FAQs</a></li>
 
                 </ul>
@@ -37,8 +37,19 @@
 
                 </div>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
         </nav>
     </section>
+
+    <script>
+        var navlinks = document.getElementById("navlinks")
+        function showMenu () {
+            navlinks.style.right = "0"
+        }
+        function hideMenu () {
+            navlinks.style.right = "-200px"
+        }
+    </script>
 
     <div class="h1galeria">
         <h1>Sobre nosotros:</h1>

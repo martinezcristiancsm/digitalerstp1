@@ -18,6 +18,17 @@
     position: relative;
 }
 
+h1{
+    font-size: 60px;
+    color:#7c8e5f;
+}
+
+.text-box h1{
+    font-size: 60px;
+    color:#7c8e5f;
+}
+
+
 nav {
     display: flex;
     padding: 2% 6%;
@@ -60,6 +71,58 @@ nav img {
 .nav-links ul li:hover::after {
     width: 100%;
 }
+nav .fa {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .text-box h1 {
+            font-size: 35px;
+    }
+
+    .text-box p {
+        font-size: 15px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+
+    .ecommerce .tiendabutton{
+        font-size: 10px;
+        left: 3vh;
+        margin-top: -50px;
+    }
+    .nav-links {
+        position: absolute;
+        background:#bbc5ab;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #7c8e5f;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+
+
+    .nav-links ul{
+        padding: 30px;
+
+    }
+    nav img {
+        width: 130px;
+    }
+}
+
+
 
 /*--------------- ecommerce button----------*/
 
@@ -145,13 +208,11 @@ nav .fa-solid{
 
 
 
-h1  {
-    font-size: 60px;
+.landing h1{
+    font-size: 40px;
     font-weight: 600;
-    text-align: right;
-    color: #3f4730;
-    border-color: white;
-    border: 5px;
+    text-align: center;
+    color:#7c8e5f;
 }
 
 .landing p {
@@ -160,7 +221,7 @@ h1  {
     line-height: 22px;
     padding: 10px;
     font-size: 20px;
-    text-align: right;
+    text-align: center;
 
 }
 
@@ -205,16 +266,15 @@ h3 {
 .section2 {
     width: 100%;
     text-align: center;
-    margin: auto;
-    background: rgb(220,232,189);
-    background: linear-gradient(0deg, rgba(220,232,189,1) 0%, rgb(255, 244, 251) 100%);  
+     
 }
 
 .section2 h1{
-    width: 80%;
     text-align: center;
     margin: auto;
-    padding-top: 5%;
+
+    font-size: 50px;
+    color: #7c8e5f;
 }
 
 .section2 p{
@@ -223,7 +283,7 @@ h3 {
     margin: auto;
     padding-top: 4% ;
     padding-bottom: 4%;
-    color:#3f4730 ;
+    color:#3b3838 ;
     font-size: 23px;
 }
 
@@ -242,13 +302,12 @@ h3 {
     box-shadow: 1, 1, 1, 1 rgb(0, 0, 0,0.2);
 }
 
-
-
 .clientes {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 50px;
     height: auto;
     display: flex;
     justify-content: space-around;
@@ -261,17 +320,25 @@ h3 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
 }
 
 .trabajosclientes {
-  width: 300px;
-  padding: 30px;
+  width: 200px;
+  padding: 15px;
   border-radius: 5px;
   border-style: none;
   background-color: #faf8db;
   margin: 5px;
   
+}
+
+.trabajosclientes h3{
+    padding-top: 5%;
+}
+
+.trabajosclientes p{
+    font-size: 15px;
 }
 
 .trabajosclientes img{
@@ -285,22 +352,26 @@ h3 {
 
 /*--------------- final landing ----------*/
 
+
 .final {
     display:grid;
     justify-content: space-around;
     padding: 50px;
+    margin: 0;
+    background: rgb(220,232,189);
+    background: linear-gradient(0deg, rgba(220,232,189,1) 0%, rgb(255, 244, 251) 100%); 
 }
 
 .final h1 {
     font-size: 45px;
-    text-align: left;
+    text-align: center;
 }
 
 .final p {
-    padding-top: 50px;
-    font-size: 20px;
+    padding: 30px;
+    font-size: 15px;
     color: #3b3838;
-    text-align: left;
+    text-align: center;
 }
 
 .final2 {
@@ -310,14 +381,16 @@ h3 {
 }
 
 .final2 img {
-    width: 80%;
+    width: 40%;
     height:auto;
     padding-bottom: 50px;
     border-radius: 15px;
 }
 
-.final2 a {
+.final2 a{
     border: 0;
+    text-align: center;
+    width: auto;
 }
 
 /*--------------- footer ----------*/
@@ -343,42 +416,39 @@ h3 {
 
 .h1galeria {
     background-color:#faf8db;
+    height: auto;
 }
 
 .h1galeria h1{
     text-align: center;
     padding: 25px;
     font-size: 50px;
+    color: #3f4730;
+}
 
+.containercont{
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    background-image: url(../img/object.png);
+    background-size: cover;
+    padding: 15px;
+    margin: 0;
+}
+
+.containercont h1{
+    color:#7c8e5f;
+    text-align: center;
 }
 
 
-
-.galeria {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
-    background-image: url(../img/object.png);
-    padding-top: 50px;
+.carousel-inner img {
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px;
     padding-bottom: 50px;
-  }
-
-  .galeria-item {
-    width: 280px;
-    padding: 20px;
-    border-radius: 5px;
-    border-style: none;
-    background-color:#faf8db;
-    margin: 5px;
-  }
-
-  .galeria-item img {
-    width: 100%;
-    border-radius: 5px;
-  }
-
-
+}
 
 
 
@@ -499,6 +569,7 @@ h3 {
 
   .faq li{
     color: #8d8d8d;
+    list-style: none;
   }
 
 

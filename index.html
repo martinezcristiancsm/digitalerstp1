@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/02fed19f28.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </head>
 
 
@@ -19,16 +22,15 @@
         <nav>
             <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
             <div class="nav-links" id="navlinks">
-
+                <i class="fa fa-times" onclick="hideMenu()" ></i>
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
                     <li><a href="./pages/galeria.html">GALERIA</a></li>
                     <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                    <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
                     <li><a href="./pages/faqs.html">FAQs</a></li>
 
                 </ul>
-
+             
 
                 <div class="ecommerce">
 
@@ -36,9 +38,9 @@
                         ♥</a>
 
                 </div>
-
-
+               
             </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
         </nav>
        
         <div class="flex">
@@ -55,8 +57,16 @@
 
         </div>
     </section>
-
-
+    
+    <script>
+        var navlinks = document.getElementById("navlinks")
+        function showMenu () {
+            navlinks.style.right = "0"
+        }
+        function hideMenu () {
+            navlinks.style.right = "-200px"
+        }
+    </script>
 
 
     <section class="landing">
@@ -67,19 +77,13 @@
             <div class="serv">
                 <h3>Productos</h3>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab
-                    blanditiis rem, suscipit nobis perferendis ipsa consequuntur
-                    necessitatibus distinctio repellat qui, error eius voluptatem
-                    aliquid consequatur.
+                    Insumos y articulos para jardineria, fertilizantes, macetas, decorativos de exterior, cesped sintetico y mucho mas.
                 </p>
             </div>
             <div class="serv">
                 <h3>Servicios</h3>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab
-                    blanditiis rem, suscipit nobis perferendis ipsa consequuntur
-                    necessitatibus distinctio repellat qui, error eius voluptatem
-                    aliquid consequatur.
+                    Servicio de paisajismo y planificación de espacios verdes, jardines verticales y decoración comercial.
                 </p>
             </div>
             <div class="serv">
@@ -87,10 +91,8 @@
                     <h3>Presupuestos <i class="fa-brands fa-whatsapp fa-beat" style="color: #7c8e5f;"></i></h3>
                 </a>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab
-                    blanditiis rem, suscipit nobis perferendis ipsa consequuntur
-                    necessitatibus distinctio repellat qui, error eius voluptatem
-                    aliquid consequatur.
+                    No dudes en comunicarte con nosotros a traves de nuestras redes sociales o Whatsapp. <br> 
+                    Siempre podemos adaptarnos a tu presupuesto.
                 </p>
             </div>
         </div>
@@ -101,92 +103,11 @@
 
 
 
-    <div class="section2">
-        <h1>Trabajos realizados a nuestros clientes:</h1>
-        <p>Realizamos todo tipo de servicios de jardineria y/o paisajismo. <br>Usamos la mejor calidad de materia prima,
-            porque tu jardin se lo merece.</p>
-        <a href="https://instagram.com/disfrutaverdesf" target="_blank">Visita nuestro Instagram <i class="fa-brands fa-instagram" style="color: #7c8e5f;"></i></a>
-
-        <section class="clientes">
-
-            <div class="container-clientes">
-                <div class="trabajosclientes">
-                    <img src="./img/trabajosclientes1.jpg" alt="foto-paisaje">
-
-                    <h3>Trabajo #1</h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-                        eligendi molestias voluptates fugiat quos exercitationem numquam
-                        delectus debitis, neque minima, incidunt nobis, eum a quod. Optio
-                        sapiente quas fuga ducimus?
-                    </p>
-                </div>
-                <div class="trabajosclientes">
-                    <img src="./img/trabajosclientes2.jpg" alt="foto-paisaje">
-
-                    <h3>Trabajo #2</h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-                        eligendi molestias voluptates fugiat quos exercitationem numquam
-                        delectus debitis, neque minima, incidunt nobis, eum a quod. Optio
-                        sapiente quas fuga ducimus?
-                    </p>
-                </div>
-                <div class="trabajosclientes">
-                    <img src="./img/trabajosclientes3.jpg" alt="foto-paisaje">
-
-                    <h3>Trabajo #3</h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-                        eligendi molestias voluptates fugiat quos exercitationem numquam
-                        delectus debitis, neque minima, incidunt nobis, eum a quod. Optio
-                        sapiente quas fuga ducimus?
-                    </p>
-                </div>
-                <div class="trabajosclientes">
-                    <img src="./img/trabajosclientes4.jpg" alt="foto-paisaje">
-
-                    <h3>Trabajo #4</h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-                        eligendi molestias voluptates fugiat quos exercitationem numquam
-                        delectus debitis, neque minima, incidunt nobis, eum a quod. Optio
-                        sapiente quas fuga ducimus?
-                    </p>
-                </div>
-                <div class="trabajosclientes">
-                    <img src="./img/trabajosclientes5.jpg" alt="foto-paisaje">
-
-                    <h3>Trabajo #5</h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-                        eligendi molestias voluptates fugiat quos exercitationem numquam
-                        delectus debitis, neque minima, incidunt nobis, eum a quod. Optio
-                        sapiente quas fuga ducimus?
-                    </p>
-                </div>
-                <div class="trabajosclientes">
-                    <img src="./img/trabajosclientes6.jpg" alt="foto-paisaje">
-
-                    <h3>Trabajo #6</h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel
-                        eligendi molestias voluptates fugiat quos exercitationem numquam
-                        delectus debitis, neque minima, incidunt nobis, eum a quod. Optio
-                        sapiente quas fuga ducimus?
-                    </p>
-                </div>
-        </section>
-
-
-
-
-
-        <main>
+        <main class="">
 
             <div class="final">
 
-                <h1>Buscamos salvar el mundo plantita a plantita ♥ </h1>
+                <h1>Buscamos salvar el mundo plantita a plantita <a href="./pages/contacto.html"><i class="fa-solid fa-heart fa-beat-fade" style="color: #e09999;"></i></a></h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aspernatur ipsum nulla, ducimus ullam
                     quis necessitatibus deleniti fuga atque enim.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos fuga nam saepe nesciunt veniam
@@ -195,12 +116,12 @@
                     alias? Amet doloremque delectus quas exercitationem placeat?
                 </p>
 
-            </div>
+           
             <div class="final2">
                 <a href="http://instagram.com/disfrutaverdesf" target="_blank"><img src="./img/final.jpg" alt="plant"
                         </a>>
             </div>
-
+        </div>
         </main>
 
 
